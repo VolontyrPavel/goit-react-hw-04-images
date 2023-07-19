@@ -8,12 +8,11 @@ export const Searchbar = ({ onSubmit }) => {
     setValue(e.currentTarget.value.toLowerCase().trim());
   };
 
-  const handleSubmit = e => {
+  function handleSubmit (e) {
     e.preventDefault();
     if (!value) {
       return alert('Заповніть строку пошуку');
     }
-    console.log(value);
     onSubmit(value);
     setValue('')
   };

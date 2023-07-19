@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const getFound = async ({ query }, page ) => {
+export const getFound = async (query, page) => {
   const API_KEY = '36730678-336aeda16ae09d290d6765b0a';
   const BASE_URL = 'https://pixabay.com/api/';
   const { data } = await axios.get(
