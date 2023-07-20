@@ -7,7 +7,6 @@ export const Modal = ({ imageURL, modalControl }) => {
     window.addEventListener('keydown', onHandleModal);
 
     function onHandleModal({ code }) {
-      console.log(code);
       if (code === 'Escape') {
         modalControl();
       }
